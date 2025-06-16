@@ -7,6 +7,16 @@
   <title>Java Web Developer Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<style>
+  /* Disable text/image selection */
+  body {
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+</style>
 <body>
   <div class="container">
     <!-- Navbar -->
@@ -146,5 +156,20 @@
     });
   <!-- </script> -->
    <script src="script.js"></script>
+   <script>
+  // Disable right-click
+  document.addEventListener('contextmenu', e => e.preventDefault());
+
+  // Disable keyboard shortcuts: Ctrl+S, Ctrl+U, F12, Ctrl+Shift+I
+  document.addEventListener('keydown', function(e) {
+    if (
+      (e.ctrlKey && ['s', 'u'].includes(e.key.toLowerCase())) ||
+      (e.key === 'F12') ||
+      (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'i')
+    ) {
+      e.preventDefault();
+    }
+  });
+</script>
 </body>
 </html>
