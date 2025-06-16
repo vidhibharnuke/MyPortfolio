@@ -138,6 +138,7 @@
         const section = document.querySelector(link.hash);
         if (section && section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
           navLinks.forEach(l => l.classList.remove('active'));
+            document.addEventListener('contextmenu', event => event.preventDefault());
           link.classList.add('active');
         }
       });
