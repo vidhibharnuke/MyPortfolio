@@ -16,23 +16,8 @@
     -moz-user-select: none;
     -ms-user-select: none;
   }
-  .watermark {
-  position: fixed;
-  top: 40%;
-  left: 25%;
-  opacity: 0.1;
-  font-size: 60px;
-  z-index: 9999;
-  color: rgb(1, 25, 30);
-  pointer-events: none;
-  transform: rotate(-30deg);
-}
 </style>
 <body>
-  <div class="page">
-  <div class="watermark"></div>
-  <!-- Your actual content -->
-</div>
   <div class="container">
     <!-- Navbar -->
     <nav class="navbar">
@@ -72,10 +57,10 @@
     <!-- About Section -->
     <section id="about" class="about-section">
       <div class="about-content">
-        <div class="about-img">
+        <!-- <div class="about-img"> -->
           <!-- <img src="Asset/profileimage..jpg" alt="Profile" /> -->
-                     <img src="Asset/profileimage..jpg" alt="Profile" oncontextmenu="return false;" draggable="false" style="pointer-events: none;" />
-        </div>
+                     <!-- <img src="Asset/profileimage..jpg" alt="Profile" oncontextmenu="return false;" draggable="false" style="pointer-events: none;" />
+        </div> -->
         <div>
           <h2>About <span class="highlight">Me</span></h2>
           <h3>Java Web Developer</h3>
@@ -162,13 +147,6 @@
       e.preventDefault();
     }
   });
-  document.addEventListener('keyup', function(e) {
-  if (e.key === 'PrintScreen') {
-    alert("Screenshots are not allowed!");
-    document.body.style.filter = "blur(10px)";
-    setTimeout(() => document.body.style.filter = "", 3000); // Restore after 3 seconds
-  }
-});
 </script>
 </body>
 </html>
