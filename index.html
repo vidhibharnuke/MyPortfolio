@@ -6,19 +6,24 @@
   <meta name="robots" content="noarchive">
   <title>Java Web Developer Portfolio</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      user-select: none;
+      -webkit-user-drag: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+  </style>
 </head>
-<style>
-  /* Disable text/image selection */
-  body {
-    user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-  }
-</style>
+
 <body>
   <div class="container">
+
     <!-- Navbar -->
     <nav class="navbar">
       <div class="logo">WebDev.</div>
@@ -31,113 +36,108 @@
       </ul>
     </nav>
 
-    <!-- Home Section -->
+    <!-- Home -->
     <section id="home" class="home-section">
       <div class="home-content">
         <div>
           <h3>Hello, It's Me</h3>
           <h1>Vidhi</h1>
           <h2>And I'm a <span class="highlight">Java Web Developer</span></h2>
+
           <p>6 months internship experience in Web development.<br>
           Skilled in Java, Spring Boot, JSP/Servlets, MySQL, and frontend basics.</p>
+
           <div class="socials">
-            <a href="www.linkedin.com/in/vidhi-bharnuke-16a944245" target="_blank" rel="noopener noreferrer" ><img src="Asset/linkedin-icon-logo-svg-vector.svg" alt="LinkedIn"></a>
-            <a href="vidhibharnuke59@gmail.com"><img src="Asset/email.svg" alt="Email"></a>
+            <a href="https://www.linkedin.com/in/vidhi-bharnuke-16a944245" target="_blank">
+              <img src="Asset/linkedin-icon-logo-svg-vector.svg" alt="LinkedIn">
+            </a>
+            <a href="mailto:vidhibharnuke59@gmail.com">
+              <img src="Asset/email.svg" alt="Email">
+            </a>
           </div>
+
           <a href="#contact" class="btn">Contact Me</a>
         </div>
+
         <div class="profile-img">
-          <!-- Replace with your image if desired -->
-          <!-- <img src="Asset/profileimage..jpg" alt="Profile" /> -->
-                     <img src="Asset/profileimage..jpg" alt="Profile" oncontextmenu="return false;" draggable="false" style="pointer-events: none;" />
+          <img src="Asset/profileimage..jpg" alt="Profile" 
+               oncontextmenu="return false;" draggable="false" 
+               style="pointer-events: none;" />
         </div>
       </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About -->
     <section id="about" class="about-section">
       <div class="about-content">
-        <!-- <div class="about-img"> -->
-          <!-- <img src="Asset/profileimage..jpg" alt="Profile" /> -->
-                     <!-- <img src="Asset/profileimage..jpg" alt="Profile" oncontextmenu="return false;" draggable="false" style="pointer-events: none;" />
-        </div> -->
         <div>
           <h2>About <span class="highlight">Me</span></h2>
           <h3>Java Web Developer</h3>
           <p>
-            I'm a passionate Java web developer with 6 months of hands-on experience during my internship. I have built web applications using Java, JSP/Servlets, Spring Boot, and basic frontend technologies. I'm eager to grow and contribute to real-world projects.
+            I'm a passionate Java web developer with 6 months of hands-on internship experience.  
+            I develop web applications using Java, JSP/Servlets, Spring Boot, MySQL, HTML, CSS, JS.
           </p>
           <a href="#projects" class="btn">See Projects</a>
         </div>
       </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services -->
     <section id="services" class="services-section">
       <h2>My <span class="highlight">Services</span></h2>
       <div class="services-list">
+
         <div class="service-card">
           <h3>Web Development</h3>
-          <p>Building robust web applications using Java, Spring Boot, JSP/Servlets, and MySQL.</p>
+          <p>Robust applications using Java, Spring Boot, JSP/Servlets, MySQL.</p>
         </div>
+
         <div class="service-card">
           <h3>Frontend Basics</h3>
-          <p>Responsive UI with HTML, CSS, JavaScript. Clean, modern, and user-friendly designs.</p>
+          <p>Responsive UI with HTML, CSS, JavaScript.</p>
         </div>
+
         <div class="service-card">
           <h3>WordPress & Deluge</h3>
-          <p>Basic WordPress site setup and Deluge scripting for Zoho integrations.</p>
+          <p>WordPress setup & Zoho Deluge scripting.</p>
         </div>
+
       </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects -->
     <section id="projects" class="projects-section">
       <h2>Latest <span class="highlight">Projects</span></h2>
       <div class="projects-list">
+
         <div class="project-card">
-          <!-- <img src="project1.jpg" alt="Hospital Management System"> -->
-          <div>
-            <h4>Hospital Management System</h4>
-            <p>Built using Java, JSP, Servlet, MySQL, HTML, CSS, JavaScript. Efficient hospital data management.</p>
-          </div>
+          <h4>Hospital Management System</h4>
+          <p>Built using Java, JSP, Servlet, MySQL, HTML, CSS, JavaScript.</p>
         </div>
+
         <div class="project-card">
-          <!-- <img src="project2.jpg" alt="Padmini Salon Website"> -->
-          <div>
-            <h4>Padmini Salon Website</h4>
-            <p>Built using HTML, CSS, JavaScript, MySQL. It is Responsive Website.</p>
-          </div>
+          <h4>Padmini Salon Website</h4>
+          <p>Responsive website using HTML, CSS, JS, and MySQL.</p>
         </div>
-        <!-- Add more project cards as needed -->
+
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <!-- <section id="contact" class="contact-section">
-      <h2>Contact <span class="highlight">Me!</span></h2>
-      <form class="contact-form" autocomplete="off">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </section> -->
-
-
+    <!-- Contact -->
     <section class="contact" id="contact">
       <div class="contact-text">
         <h2>Contact <span>Me!</span></h2>
-        <h4>If you have any project in your mind.</h4>
+        <h4>If you have any project in mind.</h4>
+
         <p>
-          I'm know Frontend-Development,creating bold & brave interface design
-          of all sector .
+          I create modern, clean, and responsive designs for all sectors.
         </p>
-        <div class="list">
-          <li><a href="#">7718979194</a></li>
-          <li><a href="#">bharnukevidhi89@gmail.com</a></li>
-          <li><a href="#">Thane,Maharashtra</a></li>
-        </div>
+
+        <ul class="list">
+          <li><a href="tel:7718979194">7718979194</a></li>
+          <li><a href="mailto:bharnukevidhi89@gmail.com">bharnukevidhi89@gmail.com</a></li>
+          <li><a href="#">Thane, Maharashtra</a></li>
+        </ul>
 
         <div class="contact-icons">
           <a href="#"><i class="bx bxl-facebook"></i></a>
@@ -146,53 +146,49 @@
           <a href="#"><i class="bx bxl-youtube"></i></a>
         </div>
       </div>
+
       <div class="contact-form">
-        
-        
-          <!-- ====== Contact Form Start ====== -->
-<form action="https://api.web3forms.com/submit" method="POST">
 
-  <!-- Your Web3Forms Access Key -->
-  <input type="hidden" name="access_key" value="12345678-abcd-9876-xyz">
+        <!-- Working Web3Forms Contact Form -->
+        <form action="https://api.web3forms.com/submit" method="POST">
 
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <input type="number" name="mobile" placeholder="Your Mobile Number" required>
+          <input type="hidden" name="access_key" value="12345678-abcd-9876-xyz">
 
-  <textarea name="message" cols="35" rows="10" placeholder="How Can I Help You?" required></textarea>
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="number" name="mobile" placeholder="Your Mobile Number" required>
 
-  <button type="submit" class="submit">Send Message</button>
-</form>
-<!-- ====== Contact Form End ====== -->
+          <textarea name="message" cols="35" rows="10" placeholder="How Can I Help You?" required></textarea>
 
-<!-- Direct Email Option -->
-<a href="mailto:bharnukevidhi89@gmail.com">Send Email Directly</a>
+          <button type="submit" class="submit">Send Message</button>
+        </form>
 
       </div>
     </section>
+
     <!-- Footer -->
     <footer>
       <p>© 2025 JavaDev. All rights reserved.</p>
     </footer>
+
   </div>
 
-  
-  <!-- </script> -->
-   <script src="script.js"></script>
-   <script>
-  // Disable right-click
-  document.addEventListener('contextmenu', e => e.preventDefault());
+  <!-- Disable right-click + shortcuts -->
+  <script>
+    document.addEventListener('contextmenu', e => e.preventDefault());
 
-  // Disable keyboard shortcuts: Ctrl+S, Ctrl+U, F12, Ctrl+Shift+I
-  document.addEventListener('keydown', function(e) {
-    if (
-      (e.ctrlKey && ['s', 'u'].includes(e.key.toLowerCase())) ||
-      (e.key === 'F12') ||
-      (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'i')
-    ) {
-      e.preventDefault();
-    }
-  });
-</script>
+    document.addEventListener('keydown', function(e) {
+      if (
+        (e.ctrlKey && ['s', 'u'].includes(e.key.toLowerCase())) ||
+        e.key === 'F12' ||
+        (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'i')
+      ) {
+        e.preventDefault();
+      }
+    });
+  </script>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
